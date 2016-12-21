@@ -1,0 +1,11 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">{{brand}}</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li *ngFor="let navLink of navLinks"><a href="navLink.href">{{navLink.title}}</a></li>
+    </ul>
+  </div>
+</nav>
