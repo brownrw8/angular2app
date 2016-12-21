@@ -4,6 +4,7 @@ import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
 import { MainBodyComponent } from './main-body.component';
+import {AlertComponent} from "../alert/alert.component";
 
 describe('MainBodyComponent', () => {
   let component: MainBodyComponent;
@@ -11,7 +12,7 @@ describe('MainBodyComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ MainBodyComponent ]
+      declarations: [ MainBodyComponent, AlertComponent ]
     })
     .compileComponents();
   }));
